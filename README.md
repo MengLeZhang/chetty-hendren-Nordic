@@ -22,6 +22,7 @@ Notes on replication of the Chetty and Hendren (C+H) design for LATF project
 * [Questions and comments](#questions-and-comments)
   * [How many data points are needed?](#how-many-data-points-are-needed)
   * [Has anyone replicated the C+H design?](#has-anyone-replicated-the-ch-design)
+* [CH replication code](#ch-replication-code)
 <!-- /TOC -->
 
 # What is the C+H design?
@@ -189,3 +190,15 @@ In Sweden: __Stefanie Bastani (maiden name: Heidrich)__ as part of PhD (paper 3)
 
 _sampe (image courtesy of Bertha)_
 ![](assets/markdown-img-paste-2021091416174910.png)
+
+----
+
+# CH replication code
+
+Idea for replication is that:
+1. Get CH's replication do file
+2. Format the Nordic data to match CH's data using a mixture of their do files and article
+3. For the formatted data, restructure the datasets to be exactly the same structure as the files used in step 1 (e.g. same .dta format, same variables names)
+4. Rerun CH's do files in step 1 to get a perfect replication
+
+Current issue: CH do files mention filenames and variable names not elaborated upon in their data dictionary!
