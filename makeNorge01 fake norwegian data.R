@@ -1,12 +1,34 @@
+##  makeFake01 -- this is the fake nordic data that Henrik preprocesses. This is the fields
 ## This is the raw data file -- if we are using it that is!
 
+# Data A: 
+#   Datasetname = ???
+#     
+#     
+#     Id    yr    born    inc    CZ        fam_id      fam_inc
+#   1     1990    1981    108    1106        7        
+#   …                    7
+#   1    1996    1981    201    1106        7
+#   1    1997    1981    201    1106        10
+#   1    1998    1981    201    1107        10
+#   1    ...    1981    201    1107        10
+#   1    2019    1981    201    1107        
+#   
+#   2    1990    1981
+#   2    ...    ...
+#   2    2019    1981
+#   
+
+# From shared google doc
 # id <str>: id string for person
 # yr <num>: year of observation
 # born <num>: year person born 
-# inc <num>: income? . Example 108
-# bsu <str>: id for bsu recorded at (jan 1) each year
-# move <int, 0 -1>: ??? [suggestion: I’ll 
-       
+# inc <num>: income in year . Example 108
+# cz <str>: id for cz recorded at (jan 1) each year
+# fam_id: id of family 
+# fam_inc: income of family
+
+
 library(tidyverse)
 library(haven)
 
