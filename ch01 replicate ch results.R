@@ -25,15 +25,12 @@ moversDF <-
 
 # Equation 5: ---------------------------------------------
 
-## regression on diff in predicted income d_e
-##  d_e = predicted income difference of permanent residents in destination vs origin -- by cohort?
-##  and fixed effects 
-## CZ of origin by parent income decile q by birth cohort s 
+# Check guide to CH variables 
 
 moversDF <-
   moversDF %>%
   mutate(
-    czOQS = paste(cz_0, cohort, par_cz_orig),
+    czOQS = paste(cz_0, cohort, par_cz_orig), 
     czOQSM = paste(cz_0, cohort, par_cz_orig, ageM)
   )
 
